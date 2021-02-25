@@ -1,9 +1,21 @@
 import java.util.Scanner;
+
 class Main {
   public static void main(String[] args) {
- System.out.println("Hey! I have some new awesome pants for sale. How much money do you guys have?");
- {
-   scanner scan = new Scanner (System.in);
- } 
+    Scanner scan = new Scanner(System.in);
+
+    System.out.println("Hey! Guess how much these new Jordan's cost?");
+    double guess = scan.nextDouble();
+     guessCost(guess);
   }
+
+  public static void guessCost(double guess) {
+    if (guess == 120) {
+      System.out.println("Yay! Your guess was correct!");
+    } else {
+      System.out.println("Sorry that is incorrect, you're welcome to guess again.");
+
+    }
+  }
+
 }
