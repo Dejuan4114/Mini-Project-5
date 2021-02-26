@@ -6,7 +6,8 @@ class Main {
 
     System.out.println("Hey! Guess how much these new Jordan's cost?");
     double guess = scan.nextDouble();
-     guessCost(guess);
+    double guess2 = scan.nextDouble();
+    guessCost(guess);
   }
 
   public static void guessCost(double guess) {
@@ -15,6 +16,13 @@ class Main {
     } else {
       System.out.println("Sorry that is incorrect, you're welcome to guess again.");
 
+    }
+  }
+  public static void guessCost(int guess2) {
+    if (guess2 == 120) {
+      System.out.println("Yay! Your guess was correct!");
+    } else {
+      System.out.println("Sorry that is incorrect, you're welcome to guess again.");
     }
   }
 
